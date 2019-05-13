@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Mytest2</title>
+</head>
+<body>
+<h1 id="title">Form</h1>
+<p id="description">test form</p>
+<form id="survey-form" action="/action_page.php" method="POST">
+  <label id="name-label" for="name">name:</label><br>
+  <input id="name" type="text" name="name" value="yourname" placeholder="Enter First name" pattern="[A-Za-z]" title='id="name-label"' required><br>
+  
+
+  <label id="email-label" for="email">email:</label><br>
+  <input id="email" type="email" name="email" value="Your@email.com" placeholder="email@gmail.com" title='id="email-label"' required><br>
+  
+
+  <label id="number-label" for="number">number:</label><br>
+  <input id="number" type="number" name="age" min="1" max="120" value="18" placeholder="Enter age" title='id="number-label"' required><br>
+
+ <select  id="dropdown" name="color">
+    <option value="t11" disabled="disabled" selected="selected">Anjoy your color like</option>
+    <option value="t1">Green</option>
+    <option value="t2">Yellow</option>
+    <option value="t3">Red</option>
+    <option value="t4">Blue</option>
+     <option value="t5">Black</option>
+    <option value="t6">White</option>
+    <option value="t7">Pink</option>
+   </select><br>
+
+  <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+  <input type="checkbox" name="vehicle2" value="Car"> I have a car <br>
+
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other<br>
+
+  <textarea style="width: 75%; height: 100px"></textarea><br>
+  <input id="submit" type="submit" name="send"><br>
+</form>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+</html>
