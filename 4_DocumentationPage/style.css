@@ -1,0 +1,59 @@
+#main-doc {
+	font-family: cursive;
+	position: absolute;
+	margin-left: 20%;
+	margin-right: 20%;
+	background: rgba(234,220,160, .1);
+}
+
+#main-doc > h1 {
+	text-align: center;
+}
+
+header > h1 {
+	color: rgb(255,0,0, .8);
+}
+
+section > h2 {
+	color: rgba(0,160,80, .5);
+}
+
+.main-section {
+	background: rgba(234,22,16, .2);
+}
+
+#navbar {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	border: 1px solid grey;
+	background: lightgrey;
+	opacity: .5;
+	top: 100px;
+	left: 5px;
+	width: 150px;
+	height: 300px;
+	z-index: 1px;
+}
+
+#navbar:hover {
+	opacity: 1;
+}
+.nav-link {
+	font-family: cursive;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.nav-link:hover {
+	color: red;
+}
+
+.nav-text {
+	color: red;
+	font-family: cursive;
+	font-size: 18px;
+	text-align: center;
+}
+
