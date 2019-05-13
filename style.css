@@ -1,0 +1,29 @@
+#main {
+	background-color: grey;
+}
+
+#title {
+	text-align: center;
+	color: red;
+}
+
+#img-div {
+}
+
+#image {
+	display: block;
+	max-width: 100%;
+    width: 100%;
+}
+
+#img-caption {
+
+}
+
+#tribute-info {
+	text-align: center;
+}
+
+#tribute-link {
+	text-align: center;
+}
