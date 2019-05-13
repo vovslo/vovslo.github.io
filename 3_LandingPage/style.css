@@ -1,0 +1,56 @@
+#header {
+	position: relative;
+	border: 2px solid red;
+    width: 100%;
+    height: 150px;
+}
+
+#header-img {
+	position: relative;
+	margin-left: 40%;
+    width: 150px;
+    height: 150px;
+}
+
+#nav-bar {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	z-index: 1;
+	margin-top: auto;
+	background: lightgrey;
+	opacity: .5;
+	
+}
+
+.nav-link {
+	width: 50px;
+	height: 50px;
+	margin: 2px;
+	padding: 2px;
+	text-align: center;
+	font-size: 30px;
+	text-decoration: none;
+	background: lightgrey;
+	border-radius: 50%;
+
+}
+
+.nav-link:active {
+	color: red;
+}
+
+.nav-link:hover {
+	color: red;
+}
+
+#video {
+	border: 2px solid green;
+	width: 100%;
+	height: 400px;
+}
+
+#form {
+	text-align: center;
+}
+
