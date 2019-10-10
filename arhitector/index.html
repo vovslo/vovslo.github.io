@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/galery_slide.css">
+	<title>Arhitector</title>
+</head>
+<body>
+
+	<div id="fast-menu">
+		<div class="icon">
+            <img class="img_icon" src="https://img.icons8.com/windows/32/000000/facebook-f--v1.png">		</div>
+		<div class="icon">
+            <img class="img_icon" src="https://img.icons8.com/windows/32/000000/twitter.png">		</div>
+		<div class="icon">
+			<img class="img_icon" src="https://img.icons8.com/windows/32/000000/google-plus.png">
+		</div>
+		<div class="icon"></div>
+	</div>
+	
+	  <div id="main-header">
+		   <h1> Name Arhitector</h1>
+		<div id="top-navigator">
+			<nav id="top-menu-nav">
+				<ul id="top-menu">
+					<li class="dropdown">
+                      <button class="dropbtn">Projects</button>
+                      <a href="" id="shower">&#10095;</a>
+                     <ul class="dropdown-content">
+                      <li><a href="#">Link 1</a></li>
+                      <li><a href="#">Link 2</a></li>
+                      <li><a href="#">Link 3</a></li>
+                     </ul>
+                    </li>
+					<li><button class="dropbtn">Pro</button></li>
+					<li><button class="dropbtn">Public</button></li>
+					<li><button class="dropbtn">
+					    <a href="blog.html">Blog</a>
+					    </button>
+					</li>
+					<li><button class="dropbtn">
+						<a href="contact.html">Contact</a>
+					    </button>
+					</li>
+					<li><button class="dropbtn">Last</button></li>
+				</ul>
+			</nav>
+		</div>
+	  </div>
+
+	  <div id="main-area">
+	  	<!-- Images used to open the lightbox -->
+	  	<div class="row">
+		 <div class="column">
+		 	<div class="cont">
+			  <img src="image/1.jpg" alt="univer1"  class="hover-shadow image" style="width: 100%">
+			  <div class="overlay">
+			  	<div onclick="openModal();currentSlide(1)" class="text">Close</div>
+			  </div>
+			</div>  
+			<img src="image/2.jpg" alt="univer1" onclick="openModal();currentSlide(2)" class="hover-shadow image"style="width: 100%">
+            <img src="image/3.jpg" alt="univer1" onclick="openModal();currentSlide(3)" class="hover-shadow image"style="width: 100%" style="width: 100%">
+			<img src="image/4.jpg" alt="univer1" onclick="openModal();currentSlide(4)" class="hover-shadow image"style="width: 100%" style="width: 100%">
+		</div>
+		<div class="column">	
+			<img src="image/5.jpg" alt="univer1" onclick="openModal();currentSlide(5)" class="hover-shadow image" style="width: 100%">
+			<img src="image/6.jpg" alt="univer1" onclick="openModal();currentSlide(6)" class="hover-shadow image" style="width: 100%">
+            <img src="image/7.jpg" alt="univer1" onclick="openModal();currentSlide(7)" class="hover-shadow image" style="width: 100%">
+		</div>
+		<div class="column">	
+			<img src="image/8.jpg" alt="univer1" onclick="openModal();currentSlide(8)" class="hover-shadow image" style="width: 100%">
+			<img src="image/9.jpg" alt="univer1" onclick="openModal();currentSlide(9)" class="hover-shadow image" style="width: 100%">
+            <img src="image/10.jpg" alt="univer1" onclick="openModal();currentSlide(10)" class="hover-shadow image" style="width: 100%">
+			<img src="image/11.jpg" alt="univer1" onclick="openModal();currentSlide(11)" class="hover-shadow image" style="width: 100%">
+		</div>
+		
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 11</div>
+      <img src="image/1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 11</div>
+      <img src="image/2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 11</div>
+      <img src="image/3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 11</div>
+      <img src="image/4.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 11</div>
+      <img src="image/5.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 11</div>
+      <img src="image/6.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 11</div>
+      <img src="image/7.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 11</div>
+      <img src="image/8.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 11</div>
+      <img src="image/9.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 11</div>
+      <img src="image/10.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">11 / 11</div>
+      <img src="image/11.jpg" style="width:100%">
+    </div>
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+   </div>
+ </div>
+	
+	<footer></footer>
+
+<script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+</body>
+</html>
