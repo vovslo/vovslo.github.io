@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>TEST_JWD Slobodyan Vladimir</title>
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+      
+      <div class="big">
+  	    <a href="#home">Logo big image</a>
+      </div>
+      <div class="small">
+  	    <a href="#home">Logo small image</a>
+      </div>
+
+      <div id="menu">
+        <a href="#menu1">Menu 1</a>
+        <a href="#menu2">Menu 2</a>
+        <a href="#menu3">Menu 3</a>
+      </div>
+  
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> 
+    </div>
+
+    <button id="helpbtn">
+  	  <a href="#about" id="help">Help button</a>
+    </button>
+  
+
+    <div class="content">
+	  <div class="bloc">Block 1</div>
+	  <div class="bloc2">Block 2
+		<div class="post">
+			<div class="logo"></div>Post 1</div>
+		<div class="post">
+		    <div class="logo"></div>Post 2</div>
+		<div class="post">
+		    <div class="logo"></div>Post 3</div>
+		<div class="post">
+		    <div class="logo"></div>Post 4</div>
+	    </div>
+	  <div class="bloc3">Block 3</div>
+    </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
